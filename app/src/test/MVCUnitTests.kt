@@ -17,6 +17,7 @@ class MVCUnitTests {
         view.displayQuestion(question)
         assertEquals(question.text, view.displayedText, "The view should display the text of the current question.")
     }
+    @Test
     fun testModelUpdatesCorrectly() {
         val model = QuestionModel()
         val initialIndex = model.getCurrentQuestionIndex()
